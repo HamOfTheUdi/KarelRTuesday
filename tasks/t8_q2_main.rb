@@ -4,21 +4,17 @@
 
 $graphical = true
 
-require_relative "DeuxBlocRobot_Mohamad"
+require_relative "RobotFaceNord_Mohamad"
 require_relative "../karel/robota"
 
 # a task for a stair sweeper
 def task()
   world = Robota::World
   
-  karel = DeuxBlocRobotMohamad.new(1, 1, Robota::EAST, 0)
-  karel.move
-  karel.move
-  karel.turn_left
-  karel.move
-  karel.move
+  karel = RobotFaceNordMohamad.new(1, 1, Robota::EAST, 0)
+  karel.move1
   
-end
+ end
 
 if __FILE__ == $0
   if $graphical

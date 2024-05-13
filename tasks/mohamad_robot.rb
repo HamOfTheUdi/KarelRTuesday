@@ -1,10 +1,10 @@
 #Copyright 2010 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 require_relative "../karel/ur_robot"
-require_relative "../mixins/turner"
+require_relative "../mixins/quizmixin"
 # A class whose robots know how to sweep a short staircase of beepers
 class MohamadRobot < UrRobot
-  include Turner
+ include Quiz
 
  def put_beepers
   put_beeper
@@ -77,6 +77,39 @@ def cloche_1
   move1
 end
 
+
+def dump_beepers
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+  put_beeper
+end
+
+def put_advance
+  put_beeper
+  move1
+end
+
 def grinch_in
   back_up
   back_up
@@ -110,34 +143,6 @@ def move_three
   move1
   move1
 end
-
-def dump_beepers
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-  put_beeper
-end
-
 
 
 

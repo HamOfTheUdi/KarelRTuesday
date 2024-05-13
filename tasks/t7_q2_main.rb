@@ -4,19 +4,33 @@
 
 $graphical = true
 
-require_relative "DeuxBlocRobot_Mohamad"
+require_relative "mohamad_robot"
 require_relative "../karel/robota"
 
 # a task for a stair sweeper
 def task()
   world = Robota::World
+  world.read_world("../karel/horloge")
   
-  karel = DeuxBlocRobotMohamad.new(1, 1, Robota::EAST, 0)
-  karel.move
-  karel.move
+  karel = MohamadRobot.new(7, 8, Robota::NORTH, 3)
+  karel.put_beepers
+  karel.move1
   karel.turn_left
-  karel.move
-  karel.move
+  karel.move1
+  karel.move1
+  karel.put_beepers
+  karel.turn_right
+  karel.move1
+  karel.turn_left
+  karel.move1
+  karel.move1
+  karel.move1
+  karel.turn_left
+  karel.move1
+  karel.move1
+  karel.put_beepers
+
+
   
 end
 
