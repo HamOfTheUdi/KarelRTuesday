@@ -21,8 +21,6 @@ def ecrit_lettre
     put_beeper
     move
     put_beeper
-    move
-    put_beeper
     turn_left
     move
     put_beeper

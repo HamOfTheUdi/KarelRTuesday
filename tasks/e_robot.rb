@@ -30,15 +30,14 @@ class ERobot < UrRobot
    put_beeper
    back_up
    back_up
+   turn_left
+   move
+   move
    turn_right
    move
    put_beeper
    move
    put_beeper
-   turn_left
-   move
-   put_beeper
-   move
-   put_beeper
+
    end
  end

@@ -16,9 +16,9 @@ def task()
   
   karel = HRobot.new(3, 2, Robota::NORTH, 12)
   karel2 = ERobot.new(7, 7, Robota::EAST, 11)
-  karel3 = LRobot.new(3, 11, Robota::NORTH, 7)
-  karel4 = LRobot.new(3, 15, Robota::NORTH, 7)
-  karel5 = ORobot.new(3, 19, Robota::EAST, 12)
+  karel3 = LRobot.new(3, 11, Robota::EAST, 7)
+  karel4 = LRobot.new(3, 15, Robota::EAST, 7)
+  karel5 = ORobot.new(3, 19, Robota::EAST, 14)
   karel.ecrit_lettre
   karel2.ecrit_lettre
   karel3.ecrit_lettre

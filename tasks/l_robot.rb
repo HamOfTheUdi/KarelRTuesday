@@ -7,7 +7,7 @@ class LRobot < UrRobot
   include Turner
 
   def ecrit_lettre
-    put_beeper
+   put_beeper
    turn_left
    move
    put_beeper
